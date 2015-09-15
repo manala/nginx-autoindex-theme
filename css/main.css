@@ -1,0 +1,71 @@
+body {
+    margin: 1em;
+    background-color: #f34141;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+h1 {
+    padding: 1em;
+    color: #666;
+    font-size: 100%;
+}
+
+hr {
+    border-top: 2px solid #e3e3e3;
+}
+
+pre {
+    overflow: auto;
+    margin: 1em;
+    line-height: 2em;
+}
+
+footer {
+    margin: 1em;
+}
+
+.container {
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* ***** */
+/* Icons */
+/* ***** */
+
+pre a[href]:before,
+pre a[href$="/"]:before {
+    content: "";
+    padding: 5px 25px 0 0;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+a[href]:before {
+    background: url(../images/icons/default.png);
+}
+
+a[href$="/"]:before {
+    background: url(../images/icons/folder.png);
+}
+
+/* Checksums */
+
+a[href$=".md5"]:before {
+    background: url(../images/icons/checksum.png);
+}
+
+/* Compression */
+
+a[href$=".bz2"]:before {
+   background: url(../images/icons/bz2.png);
+}

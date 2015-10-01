@@ -69,3 +69,13 @@ a[href$=".md5"]:before {
 a[href$=".bz2"]:before {
    background: url(../images/icons/bz2.png);
 }
+
+a[href$=".tar.gz"]:before {
+   background: url(../images/icons/tar.gz.png);
+}
+
+/* Vagrant */
+
+a[href$=".box"]:before {
+   background: url(../images/icons/vagrant.png);
+}

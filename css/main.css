@@ -79,3 +79,9 @@ a[href$=".tar.gz"]:before {
 a[href$=".box"]:before {
    background: url(../images/icons/vagrant.png);
 }
+
+/* Debiant */
+
+a[href$=".deb"]:before {
+   background: url(../images/icons/debian.png);
+}

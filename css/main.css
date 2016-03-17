@@ -70,6 +70,10 @@ a[href$=".bz2"]:before {
    background: url(../images/icons/bz2.png);
 }
 
+a[href$=".gz"]:before {
+   background: url(../images/icons/gz.png);
+}
+
 a[href$=".tar.gz"]:before {
    background: url(../images/icons/tar.gz.png);
 }
@@ -84,4 +88,10 @@ a[href$=".box"]:before {
 
 a[href$=".deb"]:before {
    background: url(../images/icons/debian.png);
+}
+
+/* Crypt */
+
+a[href$=".gpg"]:before {
+   background: url(../images/icons/crypt.png);
 }

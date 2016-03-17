@@ -1,4 +1,4 @@
-# Elao Nginx Autoindex Theme
+# Manala Nginx Autoindex Theme
 
 ## Integration
 

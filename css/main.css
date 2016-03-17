@@ -80,7 +80,7 @@ a[href$=".box"]:before {
    background: url(../images/icons/vagrant.png);
 }
 
-/* Debiant */
+/* Debian */
 
 a[href$=".deb"]:before {
    background: url(../images/icons/debian.png);

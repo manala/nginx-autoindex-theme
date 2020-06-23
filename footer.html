@@ -9,5 +9,44 @@
         <script src="/.theme/js/jquery.js"></script>
         <script src="/.theme/js/bootstrap.js"></script>
         <script src="/.theme/js/main.js"></script>
+        <script src="/.theme/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+        <script src="/.theme/html5lightbox/html5lightbox.js"></script>
+        <script>
+            lightbox.option({
+                'fitImagesInViewport': true,
+                'wrapAround': true
+            })
+        </script>
+        <script>
+            var isImage = function (path) {
+                var reg_exp = new RegExp('\.(jpg|jpeg|png)$', 'gmi');
+                if (path && path.match(reg_exp)) {
+                    return true;
+                }
+
+                return false;
+            }
+            var isVideo = function (path) {
+                var reg_exp = new RegExp('\.(mp4|m4v)$', 'gmi');
+                if (path && path.match(reg_exp)) {
+                    return true;
+                }
+
+                return false;
+            }
+            var list_items = document.getElementsByTagName('a'),
+            list_index = 0,
+            total_items = list_items.length;
+            for ( ; list_index < total_items; list_index++) {
+                var list_item = list_items[list_index];
+                var a_href = list_item.getAttribute('href');
+                if (isImage(a_href)) {
+                    list_item.setAttribute('data-lightbox','roadtrip');
+                }
+                if (isVideo(a_href)) {
+                    list_item.setAttribute('class','html5lightbox');
+                }
+            }
+        </script>
     </body>
 </html>
